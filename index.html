@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intuo Modus</title>
+    <!-- Google Fonts for Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: left;
+            padding: 0 40px;
+            max-width: 1200px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .logo {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 72px;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 60px;
+            line-height: 1.8ex;
+        }
+
+        .container h1 span {
+            font-weight: 700;
+            color: #29668c;
+        }
+   .container p {
+            font-size: 24px;
+            font-weight: 300;
+            color: #4f4f4f;
+            max-width: 600px;
+            line-height: 1.5;
+            margin-top: 60px auto;
+            text-align: left;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+       
+
+        <h1><span>Dati?</span><br>Il tuo nuovo <br><span>modus</span> operandi!</h1>
+        <p>
+            Trasformiamo le grandi organizzazioni pubbliche e private in data-driven, abilitando un nuovo modo di operare che sfruttando i dati come risorsa strategica.
+        </p>
+
+
+         <!-- Centered Logo -->
+         <div class="logo">
+            <img src="logo.svg" alt="Intuo Modus Logo" width="250">
+        </div>
+    </div>
+
+</body>
+</html>
